@@ -158,6 +158,10 @@ namespace Project
         {
             get
             {
+                if (Count == 0)
+                {
+                    return 0;
+                }
                 double sum = 0.0;
                 for (int i = 0; i < Knot_cnt_ox; i++)
                 {
