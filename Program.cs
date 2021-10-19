@@ -110,7 +110,7 @@ namespace Project
             {
                 str2 += String.Format(format, Item.x, Item.y, Item.Vector, Item.Vector.Magnitude);
             }
-            return str1 + str2;
+            return str1 + str2 + '\n';
         }
         public override string ToString()
         {
@@ -186,7 +186,7 @@ namespace Project
                     str2 += String.Format(format, i * Step_ox, j * Step_oy, Array[i, j], Array[i, j].Magnitude);
                 }
             }
-            return str1 + str2;
+            return str1 + str2 + '\n';
         }
         public V1DataList ArrayToList()
         {
