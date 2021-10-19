@@ -268,7 +268,7 @@ namespace Project
         static void Main(string[] args)
         {
             FdblComplex F = Method.E;
-            V1DataArray arr1 = new V1DataArray("V1DataArray1", new DateTime(1, 1, 1), 1, 5, 1, 2, F);
+            V1DataArray arr1 = new V1DataArray("V1DataArray1", new DateTime(1, 1, 1), 1, 5, 1.2, 1.5, F);
             Console.WriteLine(arr1.ToLongString("{0:f2} {1:f2} {2} {3:f2}\n"));
             V1DataList list1 = arr1.ArrayToList();
             Console.WriteLine(list1.ToLongString("{0:f2} {1:f2} {2} {3:f2}\n"));
@@ -277,7 +277,7 @@ namespace Project
             V1MainCollection collection = new V1MainCollection();
             collection.Add(list1);
             collection.Add(arr1);
-            V1DataArray arr2 = new V1DataArray("V1DataArray2", new DateTime(1, 1, 1), 1, 7, 1, 3, F);
+            V1DataArray arr2 = new V1DataArray("V1DataArray2", new DateTime(1, 1, 1), 1, 7, 1.3, 1.4, F);
             collection.Add(arr2);
             V1DataList list2 = new V1DataList("List2", DateTime.Now);
             list2.AddDefaults(10, F);
